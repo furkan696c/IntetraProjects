@@ -1,0 +1,3 @@
+../Core/Src/mcp9701.c:9:6:mcp9701Init	3
+../Core/Src/mcp9701.c:50:10:mcpGetValue	1
+../Core/Src/mcp9701.c:62:6:RELAY_DRIVE	3
