@@ -35,11 +35,7 @@
 #define RELAY_OFF HAL_GPIO_WritePin(TRIGGER_PORT, TRIGGER_PIN, GPIO_PIN_RESET)
 
 #define TRIGGER_DEG 25 //temperature value at which the relay will be triggered.
-#define HYSTERESIS 2
-/*****You want to run the fan at 25 degrees, but if the temperature value constantly
-fluctuates between 25 and 24 degrees, the fan will turn on and off. You can add a
-hysteresis effect to prevent this situation. The fan turns on at 25 degrees, 
-and if the value entered here is 2, the fan turns off at 23 degrees, thus reducing its sensitivity.*****/
+#define HYSTERESIS 2 //
 
 void mcp9701Init(void);
 uint32_t mcpGetValue(void);
